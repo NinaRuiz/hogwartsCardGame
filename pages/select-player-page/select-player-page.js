@@ -1,38 +1,41 @@
-const harryButton = $('#harryButton');
-const ronaldButton = $('#ronaldButton');
-const hermioneButton = $('#hermioneButton');
-const text = $('#show');
+const harryButton = document.getElementById('harryButton');
+const ronaldButton = document.getElementById('ronaldButton');
+const hermioneButton = document.getElementById('hermioneButton');
+const text = document.getElementById('show');
 
 function showPlayer(p){
-    text.text(p);
+    text.innerText = p;
 }
 
-$(document).ready(function() {
+window.$ = window.jQuery = require('jquery');
+
+(function() {
 
     let choice;
 
-    harryButton.click(function () {
+    harryButton.onclick = (function () {
+        console.log('harry button');
         choice = "harry";
-        harryButton.prop('disabled', true);
-        ronaldButton.prop('disabled', true);
-        hermioneButton.prop('disabled', true);
+        harryButton.setAttribute('disabled', true);
+        ronaldButton.setAttribute('disabled', true);
+        hermioneButton.setAttribute('disabled', true);
         showPlayer(choice);
     });
 
-    ronaldButton.click(function () {
+    ronaldButton.onclick = (function () {
         choice = "ronald";
-        harryButton.prop('disabled', true);
-        ronaldButton.prop('disabled', true);
-        hermioneButton.prop('disabled', true);
+        harryButton.setAttribute('disabled', true);
+        ronaldButton.setAttribute('disabled', true);
+        hermioneButton.setAttribute('disabled', true);
         showPlayer(choice);
     });
 
-    hermioneButton.click(function () {
+    hermioneButton.onclick = (function () {
         choice = "hermione";
-        harryButton.prop('disabled', true);
-        ronaldButton.prop('disabled', true);
-        hermioneButton.prop('disabled', true);
+        harryButton.setAttribute('disabled', true);
+        ronaldButton.setAttribute('disabled', true);
+        hermioneButton.setAttribute('disabled', true);
         showPlayer(choice);
     });
 
-});
+} )();

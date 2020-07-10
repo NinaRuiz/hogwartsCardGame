@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';">
+    <meta http-equiv="Content-Security-Policy" content="script-src-elem 'self';">
 
-    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" href="select-player-page.css">
 
@@ -53,6 +55,6 @@
         </div>
     </div>
 
-    <script src="select-player-page.js"></script>
+    <script src="./select-player-page.js"></script>
 </body>
 </html>

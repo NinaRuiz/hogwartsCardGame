@@ -1,0 +1,17 @@
+html,body,.container {
+    height:100%;
+}
+.side{
+    background-color: dimgrey;
+}
+.menu-button{
+    margin: 10px;
+    min-width: 100%;
+    text-align: left;
+}
+
+.welcome{
+    margin-top: 150px;
+    align-content: center;
+    text-align: center;
+}

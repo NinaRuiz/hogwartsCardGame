@@ -1,7 +1,11 @@
+import {gameSaveManagement} from "../../services/save-service/save-service";
+
 const harryButton = $('#harryButton');
 const ronaldButton = $('#ronaldButton');
 const hermioneButton = $('#hermioneButton');
 const text = $('#show');
+
+import {newGame} from "../../services/save-service/save-service";
 
 function showPlayer(p){
     text.text(p);
@@ -10,6 +14,8 @@ function showPlayer(p){
 $(document).ready(function() {
 
     let choice;
+
+    newGame();
 
     harryButton.click(function () {
         choice = "harry";
